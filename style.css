@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+li{
+    list-style: none;
+    padding: 5px 30px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+.logo-dev{
+    height: 40px;
+    margin: 10px;
+}
+
+.login{
+    margin-top: 30px;
+}
+.login a{
+    margin: 20px;
+    border: 1px solid black;
+    background-color: rgb(87, 0, 128);
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    border-radius: 10px;
+}
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.textos{
+    margin: 60px;
+    width: 500px;
+    margin-right: 100px;
+}
+.textos p{
+    padding: 10px 0px;
+}
+.textos button{
+    float: right;
+}
+
+#section1{
+    margin: 0 auto;
+    background-color: gray;
+}
+
+.cards{
+    margin: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    padding: 20px;
+
+}
+.card{
+    margin: 0px 30px;
+    background-color: white;
+    width: 300px;
+    padding: 30px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+}
+.card p{
+    margin-top: 20px;
+}
+
+#section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#section2 img{
+    margin: 0 auto;
+    padding: 10px;
+    height: 300px;
+}
+#section2 .text-about{
+    padding: 20px;
+    max-width: 500px;
+}
+
+#section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    width: 600px;
+    margin: 0 auto;
+}
+#section3 .cta{
+    width: 30%;
+    color: white;
+    background-color: rgb(87, 0, 128);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px 30px;
+    margin-top: 30px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: gray;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container div{
+    margin: 0px 30px;
+}
+
+.icon-social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.fa-brands{
+    height: 100%;
+    margin: 30px 10px 0px 30px;
+    color: black;
+}
+
+.copy{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    padding: 5px 0px;
+    background-color: white;
+}
+
+
+/*
+RESPONSIVIDADE
+*/
+
+@media (max-width: 599px) {
+    .banner{
+        flex-direction:column;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 900px){
+    .banner{
+        flex-direction:column;
+    }
+}
